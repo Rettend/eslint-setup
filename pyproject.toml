@@ -1,0 +1,16 @@
+[project]
+name = "eslint_setup"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.uv]
+dev-dependencies = ["ruff>=0.6.4"]
+
+[project.scripts]
+eslint_setup = "eslint_setup.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
